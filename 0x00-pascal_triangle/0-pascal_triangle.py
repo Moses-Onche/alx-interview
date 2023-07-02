@@ -4,10 +4,15 @@ from math import factorial
 
 
 def pascal_triangle(n):
-    """Defines a class that uses n to create a Pascal Triangle with lists."""
+    """Pascal's triangle
+    Args:
+      n (int): The number of rows of the triangle
+    Returns:
+      List of lists of integers representing the Pascal’s triangle
+    """
     triangle = []
     if n <= 0:
-        triangle = []
+        return triangle
     else:
         for a in range(0, n):
             i = 1
