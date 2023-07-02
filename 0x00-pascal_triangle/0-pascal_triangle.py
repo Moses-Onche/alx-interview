@@ -7,7 +7,7 @@ def pascal_triangle(n):
     """Defines a class that uses n to create a Pascal Triangle with lists."""
     triangle = []
     if n <= 0:
-        return []
+        triangle = []
     else:
         for a in range(0, n):
             i = 1
