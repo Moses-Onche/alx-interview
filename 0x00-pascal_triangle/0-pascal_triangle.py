@@ -16,4 +16,5 @@ def pascal_triangle(n):
                 i = factorial(a)/(factorial(a - b) * factorial(b))
                 row.append(int(i))
             triangle.append(row)
+
     return triangle
