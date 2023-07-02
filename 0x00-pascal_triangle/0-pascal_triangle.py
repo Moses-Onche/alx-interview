@@ -1,5 +1,6 @@
 from math import factorial
 
+
 def pascal_triangle(n):
     """Defines a class that uses n to create a Pascal Triangle with lists."""
     triangle = []
