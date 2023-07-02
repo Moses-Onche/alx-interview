@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+"""Pascal Triangle"""
 from math import factorial
 
 
