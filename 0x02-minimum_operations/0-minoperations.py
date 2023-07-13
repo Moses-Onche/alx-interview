@@ -9,13 +9,11 @@ def minOperations(n):
     """
         A function that calculates the fewest number of operations
         required to get the exact number n H characters in a file
-        args:
-		n: Number of characters to be displayed
+        args: n: Number of characters
         return:
                number of min operations
     """
 
-    #check = 1
     start = 0
     counter = 0
     for check in range(1, n):
