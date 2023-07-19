@@ -2,7 +2,6 @@
 """
 A script that reads stdin line by line and computes metrics
 """
-
 import sys
 
 
@@ -23,7 +22,7 @@ size = 0
 try:
     for line in sys.stdin:
         if count != 0 and count % 10 == 0:
-            printsts(stats, size)
+            printstats(stats, size)
 
         s_list = line.split()
         count += 1
@@ -38,9 +37,9 @@ try:
                 stats[s_list[-2]] += 1
         except ValueError:
             pass
-    printsts(stats, size)
+    printstats(stats, size)
 
 
 except KeyboardInterrupt:
-    printsts(sts, size)
+    printstats(stats, size)
     raise
