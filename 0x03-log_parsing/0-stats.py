@@ -15,7 +15,7 @@ def printstats(dictn, size):
 
 
 stats = {"200": 0, "301": 0, "400": 0, "401": 0, "403": 0,
-       "404": 0, "405": 0, "500": 0}
+         "404": 0, "405": 0, "500": 0}
 
 count = 0
 size = 0
@@ -30,13 +30,13 @@ try:
 
         try:
             size += int(s_list[-1])
-        except:
+        except ValueError:
             pass
 
         try:
             if s_list[-2] in stats:
                 stats[s_list[-2]] += 1
-        except:
+        except ValueError:
             pass
     printsts(stats, size)
 
