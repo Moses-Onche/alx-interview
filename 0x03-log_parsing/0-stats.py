@@ -1,12 +1,18 @@
 #!/usr/bin/python3
-"""
-A script that reads stdin line by line and computes metrics
-"""
+"""A script that reads stdin line by line and computes metrics."""
+
 import sys
 
 
 def printstats(dictn, size):
-    """Console output."""
+    """
+    function to print output
+    Args:
+        dictn: dictionary of status codes
+        size: total file size
+    Returns:
+        Nothing
+    """
     print("File size: {:d}".format(size))
     for key in sorted(dictn.keys()):
         if dictn[key] != 0:
