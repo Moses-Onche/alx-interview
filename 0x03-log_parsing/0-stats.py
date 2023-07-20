@@ -16,7 +16,7 @@ def printstats(dictn, size):
     print("File size: {:d}".format(size))
     for key in sorted(dictn.keys()):
         if dictn[key] != 0:
-            print("{}: {:d}".format(i, dictn[key]))
+            print("{}: {:d}".format(key, dictn[key]))
 
 
 stats = {"200": 0, "301": 0, "400": 0, "401": 0, "403": 0,
@@ -35,7 +35,7 @@ try:
 
         try:
             size += int(s_list[-1])
-        except ValueError:
+        except Exception:
             pass
 
         try:
